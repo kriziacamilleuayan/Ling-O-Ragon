@@ -1,0 +1,148 @@
+<resources>
+    <string name="app_name">Ling-O-Ragon</string>
+
+    <string name="btnStart">Umpisahan</string>
+    <string name="btnTrivias">Kaalaman</string>
+    <string name="btnSettings">Setings</string>
+    <string name="btnExit">Exit</string>
+    <string name="txtBack">balik</string>
+    <string name="txtSettings">Setings</string>
+    <string name="btnLanguage">Mga Linggwahe</string>
+    <string name="btnAbout">Tungkol sa mga gumawa</string>
+    <string name="btnFeedbackAndSuggestions">Mga Suhestyon</string>
+    <string name="btnFilipino">Filipino</string>
+    <string name="btnEnglish">English</string>
+    <string name="txtTell">Sabihin mo na ang hinanakit mo!</string>
+    <string name="txtHelp">Maaaring makatulong ito dito!</string>
+    <string name="btnSend">Ipasa</string>
+    <string name="btnGreetings">Pambati</string>
+    <string name="btnNumbers">Bilang at Sukat</string>
+    <string name="btnTime">Oras at Petsa</string>
+    <string name="txtTranslate">Isalin</string>
+    <string name="txtNext">sunod</string>
+    <string name="tutorial">Tutorial</string>
+
+    //buttons
+    <string name="yes">Oo</string>
+    <string name="no">Hindi</string>
+    <string name="next">susunod</string>
+    <string name="buy">Bilhin</string>
+
+    //alert dialogs
+    <string name="exitLing">Aalis ka na?</string>
+    <string name="exitcontent">Sigurado ka ba? :(</string>
+    <string name="greetingsStage">Pagsubok ng Pambati!</string>
+    <string name="numbersStage">Pagsubok ng mga Numero at Sukat!</string>
+    <string name="dateStage">Pagsubok ng Oras at Petsa!</string>
+    <string name="gcontent">Handa ka na ba?</string>
+    <string name="wewe">Ang tamang pagsalin ay</string>
+    <string name="congrats">Binabati kita!</string>
+    <string name="congratscontent_one">Nakakuha ka ng 50 na bituin</string>
+    <string name="oops">Sayang! Hindi mo nasagutan ng tama ang lahat :(</string>
+    <string name="oopscontent">Ulitin natin?</string>
+    <string name="cont">Ipagpatuloy?</string>
+    <string name="selectLang">Pumili ng Linggwahe</string>
+    <string name="selectedFil">Ang pinili mo ay Filipino</string>
+    <string name="selectedEng">You have selected English</string>
+
+
+    //questions
+    <string name="oneone"><b>Daghang</b> salamat sa mga regalo.</string>
+    <string name="onetwo"><b>Dios mabalos</b> sa bigay mo na sapatos.</string>
+    <string name="onethree"><b>Magandang umaga</b> sa inyong lahat.</string>
+    <string name="onefour"><b>Magandang Hapon</b>.</string>
+    <string name="onefive">Pakiluway-luwayan man <b>tabi</b> an pagtaram mo.</string>
+    <string name="onesix"><b>Mahal kita</b>.</string>
+    <string name="oneseven"><b>Marhay na banggi</b>.</string>
+    <string name="oneeight"><b>Paaram</b> sa inyong lahat.</string>
+    <string name="onenine"><b>Dios mabalos</b>.</string>
+    <string name="oneten"><b>Patawarun mo ako</b>.</string>
+    <string name="oneeleven"><b>Tuloy</b> kayo.</string>
+    <string name="onetwelve"><b>Oo</b>, mabuti naman kami.</string>
+    <string name="onethirteen"><b>Marhay na banggi</b> daragang magayon.</string>
+    <string name="onefourteen"><b>Marhay man</b>.</string>
+    <string name="onefifteen"><b>Hindi</b>, ayos lang.</string>
+
+
+    //level one stage two
+    <string name="twoone"><b>Anim</b>.</string>
+    <string name="twotwo"><b>Dalawa</b>.</string>
+    <string name="twothree"><b>Sampulung dakulang sira</b>.</string>
+    <string name="twofour"><b>Halaba</b>.</string>
+    <string name="twofive"><b>Malaki</b>.</string>
+    <string name="twosix"><b>Tatlo</b>.</string>
+    <string name="twoseven"><b>Manipis</b>.</string>
+    <string name="twoeight"><b>Sarong</b> sira.</string>
+    <string name="twonine"><b>Duwa</b>ng tugang.</string>
+    <string name="twoten"><b>Mahiwas an bukid nin lolo</b>.</string>
+    <string name="twoeleven"><b>Halangkaw</b>.</string>
+
+
+    //Oneone
+    <string name="btnMaganda">Maganda</string>
+    <string name="btnMabuti">Mabuti</string>
+    <string name="btnMarami">Marami</string>
+
+    //One-two
+    <string name="btnMatibay">Matibay</string>
+    <string name="btnSalamat">Salamat</string>
+
+    //One-three
+    <string name="btnAga">Marhay na aga</string>
+    <string name="btnHapon">Marhay na hapon</string>
+    <string name="btnBanggi">Marhay na banggi</string>
+
+
+    //One-five
+    <string name="btnpPlease">please</string>
+    <string name="btnSigi">sigi</string>
+    <string name="btnBalik">balik</string>
+
+
+    //One-eigth
+    <string name="btnPaalam">paalam</string>
+    <string name="btnKumusta">kumusta</string>
+    <string name="btnPahiram">pahiram</string>
+
+
+    //One-thirteen
+    <string name="btnUmaga">Magandang Umaga</string>
+    <string name="btnHaponT">Magandang hapon</string>
+    <string name="btnGabi">Magandang gabi</string>
+
+
+    //Two-Two
+    <string name="btnDuo">Duo</string>
+    <string name="btnDuwa">Duwa</string>
+    <string name="btnDiit">Diit</string>
+
+    //Two-Five
+    <string name="btnManiwang">Maniwang</string>
+    <string name="btnDakol">Dakol</string>
+    <string name="btnDakula">Dakula</string>
+    <string name="btnSampulu">Sampulu</string>
+
+
+    //Three-three
+    <string name="btnKahapon">Kahapon</string>
+    <string name="btnBukas">Bukas</string>
+    <string name="btnMamaya">Mamaya</string>
+
+
+    //Three-five
+    <string name="btnUmagaga">Umaga</string>
+    <string name="btnKagabi">Kagabi</string>
+
+    <string name="greet">Kumusta ka</string>
+    <string name="langselection">Pumili ng Linguahe</string>
+    <string name="chooselang">Choose the language</string>
+    <string-array name="languages">
+        <item>Pumili ng Linguahe</item>
+        <item>Filipino்</item>
+        <item>English</item>
+    </string-array>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

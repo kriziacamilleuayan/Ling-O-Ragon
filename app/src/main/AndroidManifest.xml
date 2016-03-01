@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.mobapp.android.pupkev.com.ling_o_ragon">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ico"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:debuggable="true"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        <activity
+            android:name=".SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".LingORagonActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.LingORagonActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.MainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SettingActivity"
+            android:label="Setting"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.SettingActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".StartActivity"
+            android:label="Start"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.StartActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".LanguageActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.LanguageActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".AboutActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.AboutActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".FeedbackActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.FeedbackActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".TriviasActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.TriviasActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".LevelOneActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.LevelOneActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".TriviaOneActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.TriviaOneActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".AndroidLocalize"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.AndroidLocalize" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".OneOneActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.OneOneActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".OneTwoActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.OneTwoActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".OneThreeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.OneThreeActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".OneFourActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.OneFourActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".OneFiveActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.OneFiveActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".OneSixActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.OneSixActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".OneSevenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.OneSevenActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".OneEightActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.OneEightActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".OneNineActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.OneNineActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".OneTenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.OneTenActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".OneElevenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.OneElevenActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".OneTwelveActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.OneTwelveActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".OneThirteenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.OneThirteenActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".OneFourteenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.OneFourteenActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".OneFifteenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.OneFifteenActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".TwoOneActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.TwoOneActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".TwoTwoActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.TwoTwoActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".TwoThreeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.TwoThreeActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".TwoFourActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.TwoFourActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".TwoFiveActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.TwoFiveActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".TwoSixActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.TwoSixActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".TwoSevenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.TwoSevenActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".TwoEightActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.TwoEightActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".ThreeOneActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.ThreeOneActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ThreeTwoActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.ThreeTwoActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".ThreeThreeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.ThreeThreeActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".ThreeFourActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.ThreeFourActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+
+        <activity android:name=".ThreeFiveActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.ThreeFiveActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".TutorialOneActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.TutorialOneActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".TutorialTwoActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.TutorialTwoActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".TutorialThreeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.TutorialThreeActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".TutorialFourActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.TutorialFourActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".TutorialFiveActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.TutorialFiveActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".TutorialSevenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.TutorialSevenActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".TutorialSixActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.TutorialSixActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".TutorialEightActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.TutorialEightActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".TutorialNineActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.TutorialNineActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".TwoNineActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.TwoNineActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".TwoTenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.TwoTenActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".TwoElevenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.TwoElevenActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

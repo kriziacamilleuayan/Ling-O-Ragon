@@ -1,0 +1,72 @@
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="app.mobapp.android.pupkev.com.ling_o_ragon.LevelOneActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/simplestar"
+        android:padding="5dp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="60dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtlvl1"
+        android:text="level 1"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="40dp" />
+
+
+
+    <Button
+        android:layout_width="250sp"
+        android:layout_height="55sp"
+        android:text="@string/btnGreetings"
+        android:id="@+id/btnGreetings"
+        android:background="@drawable/paperbtnyellow"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp" />
+
+
+
+    <Button
+        android:layout_width="250sp"
+        android:layout_height="55sp"
+        android:text="@string/btnNumbers"
+        android:id="@+id/btnNumbers"
+        android:background="@drawable/paperbtnblue"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp" />
+
+
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="55sp"
+        android:text="@string/btnTime"
+        android:id="@+id/btnTime"
+        android:background="@drawable/paperbtnred"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="130dp" />
+
+
+</FrameLayout>

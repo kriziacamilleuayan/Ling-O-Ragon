@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/five"
+    android:id="@+id/tutorialseven">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This type of question lets you chose a particular picture which defines the context given."
+        android:id="@+id/wew"
+        android:layout_gravity="center_horizontal|top"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:padding="20dp"
+        android:background="#7affffff" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:text="Exit Tutorial"
+        android:id="@+id/exit"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="#000000"
+        android:textColor="#ffffff" />
+
+</FrameLayout>

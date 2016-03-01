@@ -1,0 +1,38 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical"
+    tools:context="app.mobapp.android.pupkev.com.ling_o_ragon.AndroidLocalize">
+
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/languages"
+        android:gravity="center" android:paddingTop="25sp"
+        android:layout_gravity="center"
+        android:background="#F08080"
+        android:focusable="false"
+        android:popupBackground="#F08080"
+        android:spinnerMode="dropdown"
+        android:popupElevation="10dp" />
+
+    <TextView
+        android:text="@string/btnLanguage"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:textColor="#F08080"
+        android:id="@+id/textView4"
+        android:clickable="false"
+        android:backgroundTint="#000000ff"
+        android:layout_marginTop="80dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:paddingStart="20sp"
+        android:layout_gravity="center|top" />
+
+</FrameLayout>

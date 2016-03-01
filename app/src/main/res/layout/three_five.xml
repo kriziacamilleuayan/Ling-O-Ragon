@@ -1,0 +1,103 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.mobapp.android.pupkev.com.ling_o_ragon.ThreeFiveActivity"
+    android:background="@drawable/bgred">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView"
+        android:text="@string/txtTranslate"
+        android:textColor="#ffffff"
+        android:typeface="normal"
+        android:textStyle="italic"
+        android:paddingEnd="10dp"
+        android:textSize="15sp"
+        android:layout_gravity="center|left|top"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView2"
+        android:text="Nadangog mo ba su huni nin uwak "
+        android:textColor="#ffffff"
+        android:typeface="normal"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="120dp"
+        android:layout_marginRight="0dp" />
+
+    <Button
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:id="@+id/btnUmaga"
+        android:background="@drawable/paperbtnred"
+        android:text="@string/btnUmagaga"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:id="@+id/btnMamaya"
+        android:background="@drawable/paperbtnred"
+        android:text="@string/btnMamaya"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp" />
+
+    <Button
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:id="@+id/btnKagabi"
+        android:background="@drawable/paperbtnred"
+        android:text="@string/btnKagabi"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="130dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView9"
+        android:text="kasubanggi."
+        android:textColor="#ffffff"
+        android:typeface="normal"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:layout_marginBottom="80dp"
+        android:layout_marginRight="0dp"
+        android:layout_gravity="center"
+        android:textStyle="bold" />
+
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="10dp"
+        android:max="15"
+        android:indeterminate="false"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:progressBackgroundTint="#000000" />
+
+</FrameLayout>

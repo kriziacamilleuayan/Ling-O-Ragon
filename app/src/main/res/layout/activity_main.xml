@@ -1,0 +1,87 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="app.mobapp.android.pupkev.com.ling_o_ragon.MainActivity">
+
+    <TextView
+        android:text="Oragon Ka Ba?"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:textColor="#ffffff"
+        android:id="@+id/txtOragonKaBa"
+        android:clickable="false"
+        android:backgroundTint="#000000ff"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:paddingStart="20sp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="70dp"
+        android:typeface="sans" />
+
+    <Button
+        android:layout_width="150sp"
+        android:layout_height="55sp"
+        android:text="@string/btnStart"
+        android:id="@+id/btnStart"
+        android:background="@drawable/paperbtn"
+        android:textColor="#000000"
+        android:layout_below="@+id/txtOragonKaBa"
+        android:layout_alignParentLeft="true"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp" />
+
+    <Button
+        android:layout_width="150sp"
+        android:layout_height="55sp"
+        android:text="@string/btnTrivias"
+        android:id="@+id/btnTrivias"
+        android:background="@drawable/paperbtn"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_below="@+id/btnStart"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:layout_width="150sp"
+        android:layout_height="55sp"
+        android:text="@string/btnSettings"
+        android:id="@+id/btnSettings"
+        android:background="@drawable/paperbtn"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_below="@+id/btnTrivias"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp" />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:id="@+id/txtStars"
+        android:layout_gravity="right|top"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:textAlignment="viewEnd"
+        android:paddingEnd="5dp" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/star"
+        android:layout_gravity="right|top"
+        android:src="@drawable/simplestar"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="20dp"
+        android:padding="5dp" />
+
+
+
+</FrameLayout>

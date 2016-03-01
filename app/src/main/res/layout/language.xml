@@ -1,0 +1,58 @@
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    tools:context="app.mobapp.android.pupkev.com.ling_o_ragon.LanguageActivity">
+
+
+
+    <TextView
+        android:text="@string/btnLanguage"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:textColor="#696969"
+        android:id="@+id/txtLanguage"
+        android:clickable="false"
+        android:backgroundTint="#000000ff"
+        android:layout_marginTop="80dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:paddingStart="20sp" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnFilipino"
+        android:id="@+id/btnFilipino"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:background="#F08080"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/txtLanguage"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="145dp"
+        android:textSize="20dp" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnEnglish"
+        android:id="@+id/btnEnglish"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:background="#F08080"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:layout_below="@id/btnFilipino"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="220dp"
+        android:layout_alignParentLeft="true" />
+
+
+
+</FrameLayout>

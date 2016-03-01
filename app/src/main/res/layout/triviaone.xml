@@ -1,0 +1,58 @@
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="app.mobapp.android.pupkev.com.ling_o_ragon.TriviaOneActivity">
+
+
+    <TextView
+        android:text="Trivia"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="75dp"
+        android:layout_height="40sp"
+        android:textColor="#ffffff"
+        android:id="@+id/txtTrivias"
+        android:clickable="false"
+        android:layout_marginTop="50dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"  />
+
+    <TextView
+        android:text="Mayon Volcano"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:textColor="#ffffff"
+        android:id="@+id/txtMayon"
+        android:clickable="false"
+        android:backgroundTint="#000000ff"
+        android:layout_marginTop="80dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageView3"
+        android:src="@drawable/mayon"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:adjustViewBounds="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Mayon volcano is one of the Bicol region's pride. It is well-known for its almost perfect cone shape."
+        android:id="@+id/textView5"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:textSize="20dp"
+        android:lines="5"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="#ffffff" />
+</FrameLayout>

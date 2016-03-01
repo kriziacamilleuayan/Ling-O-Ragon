@@ -1,0 +1,90 @@
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.mobapp.android.pupkev.com.ling_o_ragon.TwoNineActivity"
+    android:background="@drawable/bgblue">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView"
+        android:text="@string/txtTranslate"
+        android:textColor="#ffffff"
+        android:typeface="normal"
+        android:textStyle="italic"
+        android:paddingEnd="10dp"
+        android:textSize="15sp"
+        android:layout_gravity="center|left|top"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp" />
+
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView3"
+        android:text="@string/twonine"
+        android:textColor="#ffffff"
+        android:typeface="normal"
+        android:textSize="15sp"
+        android:textIsSelectable="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="150dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textAlignment="center" />
+
+    <Button
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:id="@+id/btnNext"
+        android:background="@drawable/paperbtnblue"
+        android:text="@string/txtNext"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edittxtAns"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView7"
+        android:layout_gravity="center"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/twosiblings" />
+
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="10dp"
+        android:max="15"
+        android:indeterminate="false"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:progressBackgroundTint="#000000" />
+
+</FrameLayout>

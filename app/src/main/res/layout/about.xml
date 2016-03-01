@@ -1,0 +1,140 @@
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="app.mobapp.android.pupkev.com.ling_o_ragon.AboutActivity">
+
+
+    <TextView
+        android:text="@string/btnAbout"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:textColor="#ffffff"
+        android:id="@+id/txtAbout"
+        android:clickable="false"
+        android:backgroundTint="#000000ff"
+        android:layout_marginTop="60dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:paddingStart="20dp"
+        android:layout_gravity="center|top" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Ling-O-Ragon"
+        android:id="@+id/textLing"
+        android:layout_marginTop="120dp"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:background="#000000ff"
+        android:textStyle="bold"
+        android:layout_gravity="center|top"
+        android:autoText="false" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="(c) 2015 - 2016"
+        android:id="@+id/textdate"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:textColor="#696969"
+        android:background="#000000ff"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="160dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Developers"
+        android:id="@+id/textdevelopers"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:textColor="#818181"
+        android:background="#000000ff"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Krizia Camille Uayan"
+        android:id="@+id/textkrizia"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:background="#000000ff"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Erik Jon del Castillo"
+        android:id="@+id/texterik"
+        android:layout_marginTop="113dp"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:background="#000000ff"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Venice Joyce Yumol"
+        android:id="@+id/textVenjo"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:background="#000000ff"
+        android:layout_gravity="center"
+        android:layout_marginTop="136dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="BSIT 3-3"
+        android:id="@+id/textBSIT"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:background="#000000ff"
+        android:layout_gravity="center"
+        android:layout_marginTop="190dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Polytechnic University of the Philippines"
+        android:id="@+id/textPUP"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:background="#000000ff"
+        android:layout_gravity="center"
+        android:layout_marginTop="210dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="120sp"
+        android:id="@+id/imageView5"
+        android:layout_gravity="center"
+        android:src="@drawable/kev"
+        android:layout_marginTop="30dp" />
+
+
+</FrameLayout>
