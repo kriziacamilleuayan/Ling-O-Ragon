@@ -46,16 +46,16 @@ public class OneThirteenActivity extends Activity{
         mp = MediaPlayer.create(this,R.raw.click);
         mp.start();
         AlertDialog.Builder a_builder = new AlertDialog.Builder(OneThirteenActivity.this);
-        a_builder.setTitle("Continue?")
+        a_builder.setTitle(R.string.cont)
                 .setCancelable(false)
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.cancel();
                     }
 
                 })
-                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                .setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         Intent nextform = new Intent(OneThirteenActivity.this, LevelOneActivity.class);
@@ -86,9 +86,9 @@ public class OneThirteenActivity extends Activity{
 
                         AlertDialog.Builder alert = new AlertDialog.Builder(context);
                         //alert.setTitle(""); //Set Alert dialog title here
-                        alert.setMessage("The correct translation is 'Magandang gabi magandang dalaga.'"); //Message here
+                        alert.setMessage(R.string.tonethirteen); //Message here
                         alert.setCancelable(false);
-                        alert.setPositiveButton("next", new DialogInterface.OnClickListener() {
+                        alert.setPositiveButton(R.string.next, new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int whichButton) {
                                 mp.start();
                                 Intent nextForm = new Intent(OneThirteenActivity.this, OneFourteenActivity.class);
@@ -115,9 +115,9 @@ public class OneThirteenActivity extends Activity{
 
                         AlertDialog.Builder alert = new AlertDialog.Builder(context);
                         //alert.setTitle(""); //Set Alert dialog title here
-                        alert.setMessage("The correct translation is 'Magandang gabi magandang dalaga.'"); //Message here
+                        alert.setMessage(R.string.tonethirteen); //Message here
                         alert.setCancelable(false);
-                        alert.setPositiveButton("next", new DialogInterface.OnClickListener() {
+                        alert.setPositiveButton(R.string.next, new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int whichButton) {
                                 mp.start();
                                 Intent nextForm = new Intent(OneThirteenActivity.this, OneFourteenActivity.class);

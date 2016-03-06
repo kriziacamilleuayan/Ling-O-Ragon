@@ -48,9 +48,9 @@ public class OneThreeActivity extends Activity {
         mp = MediaPlayer.create(this,R.raw.click);
         mp.start();
         AlertDialog.Builder a_builder = new AlertDialog.Builder(OneThreeActivity.this);
-        a_builder.setTitle("Continue?")
+        a_builder.setTitle(R.string.cont)
                 .setCancelable(false)
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         mp.start();
@@ -58,7 +58,7 @@ public class OneThreeActivity extends Activity {
                     }
 
                 })
-                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                .setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         mp.start();
@@ -112,9 +112,9 @@ public class OneThreeActivity extends Activity {
 
                         AlertDialog.Builder alert = new AlertDialog.Builder(context);
                         //alert.setTitle(""); //Set Alert dialog title here
-                        alert.setMessage("The correct translation is 'Marhay na aga sa inyong lahat.'"); //Message here
+                        alert.setMessage(R.string.tonethree); //Message here
                         alert.setCancelable(false);
-                        alert.setPositiveButton("next", new DialogInterface.OnClickListener() {
+                        alert.setPositiveButton(R.string.next, new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int whichButton) {
                                 mp.start();
                                 Intent nextForm = new Intent(OneThreeActivity.this, OneFourActivity.class);
@@ -137,9 +137,9 @@ public class OneThreeActivity extends Activity {
                         mp.start();
                         AlertDialog.Builder alert = new AlertDialog.Builder(context);
                         //alert.setTitle(""); //Set Alert dialog title here
-                        alert.setMessage("The correct translation is 'Marhay na aga sa inyong lahat.'"); //Message here
+                        alert.setMessage(R.string.tonethree); //Message here
                         alert.setCancelable(false);
-                        alert.setPositiveButton("next", new DialogInterface.OnClickListener() {
+                        alert.setPositiveButton(R.string.next, new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int whichButton) {
                                 mp.start();
                                 Intent nextForm = new Intent(OneThreeActivity.this, OneFourActivity.class);

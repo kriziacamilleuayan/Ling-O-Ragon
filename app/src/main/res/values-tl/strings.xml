@@ -64,6 +64,25 @@
     <string name="onefifteen"><b>Hindi</b>, ayos lang.</string>
 
 
+    <!-- alert dialog correct translation Stage 1-->
+    <string name="toneone">Ang tamang pagsalin ay <b>Maraming salamat sa mga regalo.</b></string>
+    <string name="tonetwo">Ang tamang pagsalin ay <b>Salamat sa bigay mo na sapatos.</b></string>
+    <string name="tonethree">Ang tamang pagsalin ay <b>Marhay na aga sa inyong lahat.</b></string>
+    <string name="tonefour">Ang tamang pagsalin ay <b>Marhay na hapon.</b></string>
+    <string name="tonefive">Ang tamang pagsalin ay <b>Please, bagalan mo ang pagsasalita.</b></string>
+    <string name="tonesix">Ang tamang pagsalin ay <b>Namomotan ta ka.</b></string>
+    <string name="toneseven">Ang tamang pagsalin ay <b>Magandang gabi.</b></string>
+    <string name="toneeight">Ang tamang pagsalin ay <b>Paalam sa inyong lahat.</b></string>
+    <string name="tonenine">Ang tamang pagsalin ay <b>Salamat.</b></string>
+    <string name="toneten">Ang tamang pagsalin ay <b>Patawarin mo ako.</b></string>
+    <string name="toneeleven">Ang tamang pagsalin ay <b>Dagos kayo.</b></string>
+    <string name="tonetwelve">Ang tamang pagsalin ay <b>Iyo.</b></string>
+    <string name="tonethirteen">Ang tamang pagsalin ay <b>Magandang gabi magandang dalaga.</b></string>
+    <string name="tonefourteen">Ang tamang pagsalin ay <b>Mabuti naman.</b></string>
+    <string name="tonefifteen">Ang tamang pagsalin ay <b>Dai.</b></string>
+
+
+
     //level one stage two
     <string name="twoone"><b>Anim</b>.</string>
     <string name="twotwo"><b>Dalawa</b>.</string>

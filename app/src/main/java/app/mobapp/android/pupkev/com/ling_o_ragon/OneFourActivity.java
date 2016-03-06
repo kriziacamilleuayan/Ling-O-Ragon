@@ -47,9 +47,9 @@ public class OneFourActivity extends Activity {
         mp = MediaPlayer.create(this, R.raw.click);
         mp.start();
         AlertDialog.Builder a_builder = new AlertDialog.Builder(OneFourActivity.this);
-        a_builder.setTitle("Continue?")
+        a_builder.setTitle(R.string.cont)
                 .setCancelable(false)
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         mp.start();
@@ -57,7 +57,7 @@ public class OneFourActivity extends Activity {
                     }
 
                 })
-                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                .setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         mp.start();
@@ -97,9 +97,9 @@ public class OneFourActivity extends Activity {
                         }
                         else{
                             AlertDialog.Builder alert = new AlertDialog.Builder(context);
-                            alert.setMessage("The correct translation is 'Marhay na hapon'"); //Message here
+                            alert.setMessage(R.string.tonefour); //Message here
                             alert.setCancelable(false);
-                            alert.setPositiveButton("next", new DialogInterface.OnClickListener() {
+                            alert.setPositiveButton(R.string.next, new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int whichButton) {
                                     mp.start();
                                     Intent nextForm = new Intent(OneFourActivity.this, OneFiveActivity.class);

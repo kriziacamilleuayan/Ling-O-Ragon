@@ -94,7 +94,7 @@ public class OneOneActivity extends Activity {
                         //txt_ans.setText(ans);
                         AlertDialog.Builder alert = new AlertDialog.Builder(context);
                         //alert.setTitle(R.string.correctTranslation); //Set Alert dialog title here
-                        alert.setMessage(R.string.wewe + "The correct translation is 'Maraming salamat sa mga regalo.'"); //Message here
+                        alert.setMessage(R.string.toneone); //Message here
                         alert.setCancelable(false);
                         alert.setPositiveButton(R.string.next, new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int whichButton) {
@@ -119,7 +119,7 @@ public class OneOneActivity extends Activity {
                        // txt_ans.setText(ans);
                         AlertDialog.Builder alert = new AlertDialog.Builder(context);
                         //alert.setTitle(""); //Set Alert dialog title here
-                        alert.setMessage("The correct translation is 'Maraming salamat sa mga regalo.'"); //Message here
+                        alert.setMessage(R.string.toneone); //Message here
                         alert.setCancelable(false);
                         alert.setPositiveButton(R.string.next, new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int whichButton) {

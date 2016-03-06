@@ -58,17 +58,17 @@ public class LevelOneActivity extends Activity {
                     public void onClick(View v) {
                         mp.start();
                         AlertDialog.Builder alert = new AlertDialog.Builder(context);
-                        alert.setTitle("Greetings Stage!");
-                        alert.setMessage(" Are you ready?");
+                        alert.setTitle(R.string.greetingsStage);
+                        alert.setMessage(R.string.gcontent);
                         alert.setCancelable(false);
-                        alert.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                        alert.setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 mp.start();
                                 dialog.cancel();
                             }
                         });
-                        alert.setPositiveButton("yes", new DialogInterface.OnClickListener() {
+                        alert.setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int whichButton) {
                                 mp.start();
                                 Intent nextForm = new Intent(LevelOneActivity.this, OneOneActivity.class);
@@ -99,17 +99,17 @@ public class LevelOneActivity extends Activity {
                         public void onClick(View v) {
                             mp.start();
                             AlertDialog.Builder alert = new AlertDialog.Builder(context);
-                            alert.setTitle("Numbers and Sizes Stage!");
-                            alert.setMessage(" Are you ready?");
+                            alert.setTitle(R.string.numbersStage);
+                            alert.setMessage(R.string.gcontent);
                             alert.setCancelable(false);
-                            alert.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                            alert.setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
                                     mp.start();
                                     dialog.cancel();
                                 }
                             });
-                            alert.setPositiveButton("yes", new DialogInterface.OnClickListener() {
+                            alert.setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int whichButton) {
                                     mp.start();
                                     Intent nextForm = new Intent(LevelOneActivity.this, TwoOneActivity.class);
@@ -140,17 +140,17 @@ public class LevelOneActivity extends Activity {
                         public void onClick(View v) {
                             mp.start();
                             AlertDialog.Builder alert = new AlertDialog.Builder(context);
-                            alert.setTitle("Date and Time Stage!");
-                            alert.setMessage(" Are you ready?");
+                            alert.setTitle(R.string.dateStage);
+                            alert.setMessage(R.string.gcontent);
                             alert.setCancelable(false);
-                            alert.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                            alert.setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
                                     mp.start();
                                     dialog.cancel();
                                 }
                             });
-                            alert.setPositiveButton("yes", new DialogInterface.OnClickListener() {
+                            alert.setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int whichButton) {
                                     mp.start();
                                     Intent nextForm = new Intent(LevelOneActivity.this, ThreeOneActivity.class);

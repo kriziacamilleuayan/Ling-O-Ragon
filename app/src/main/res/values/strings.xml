@@ -49,6 +49,25 @@
     <string name="onefourteen"><b>Marhay man</b>.</string>
     <string name="onefifteen"><b>Hindi</b>, ayos lang.</string>
 
+    <!-- alert dialog correct translation Stage 1-->
+    <string name="toneone">The correct translation is <b>Maraming salamat sa mga regalo.</b></string>
+    <string name="tonetwo">The correct translation is <b>Salamat sa bigay mo na sapatos.</b></string>
+    <string name="tonethree">The correct translation is <b>Marhay na aga sa inyong lahat.</b></string>
+    <string name="tonefour">The correct translation is <b>Marhay na hapon.</b></string>
+    <string name="tonefive">The correct translation is <b>Please, bagalan mo ang pagsasalita.</b></string>
+    <string name="tonesix">The correct translation is <b>Namomotan ta ka.</b></string>
+    <string name="toneseven">The correct translation is <b>Magandang gabi.</b></string>
+    <string name="toneeight">The correct translation is <b>Paalam sa inyong lahat.</b></string>
+    <string name="tonenine">The correct translation is <b>Salamat.</b></string>
+    <string name="toneten">The correct translation is <b>Patawarin mo ako.</b></string>
+    <string name="toneeleven">The correct translation is <b>Dagos kayo.</b></string>
+    <string name="tonetwelve">The correct translation is <b>Iyo.</b></string>
+    <string name="tonethirteen">The correct translation is <b>Magandang gabi magandang dalaga.</b></string>
+    <string name="tonefourteen">The correct translation is <b>Mabuti naman.</b></string>
+    <string name="tonefifteen">The correct translation is <b>Dai.</b></string>
+
+
+
     //level one stage two
     <string name="twoone"><b>Anim</b>.</string>
     <string name="twotwo"><b>Dalawa</b>.</string>
