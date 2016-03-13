@@ -1,0 +1,17 @@
+Mob-app
+
+THE 5 FEATURES
+- Points are earned each level. (stars)/
+- Helpful trivias and tips can be bought after earning points./
+- It will be consisted of three levels, having three sub-levels each.
+- An extra level will be encountered as a review of past quizzes/levels of the same stage. 
+- Questions will vary from uses, i.e. for greetings, for travel, etc.
+
+---------------------------------------------------------
+
+-Responsive design
+-get string from string.xml to alertDialog etc.
+-customize alertDialogs
+
+-Restarting app without changes (save all instances that have been manipulated)
+-first usage = tutorial

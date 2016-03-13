@@ -4,11 +4,13 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.media.Image;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.util.DisplayMetrics;
 import android.view.View;
 import android.view.animation.Animation;
@@ -72,6 +74,13 @@ public class SettingActivity extends Activity{
                                                 R.string.selectedFil, Toast.LENGTH_SHORT)
                                                 .show();
                                         setLocale("tl");
+
+                                        SharedPreferences sharedP = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+                                        SharedPreferences.Editor editor = sharedP.edit();
+                                        Integer lang = 0;
+                                        editor.putInt("lang", lang);
+                                        editor.commit();
+
                                         Intent refresh = new Intent("app.mobapp.android.pupkev.com.ling_o_ragon.MainActivity");
                                         startActivity(refresh);
                                         overridePendingTransition(R.anim.pushrightin, R.anim.pushrightout);
@@ -88,6 +97,13 @@ public class SettingActivity extends Activity{
                                                 R.string.selectedEng, Toast.LENGTH_SHORT)
                                                 .show();
                                         setLocale("en");
+
+                                        SharedPreferences sharedP = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+                                        SharedPreferences.Editor editor = sharedP.edit();
+                                        Integer lang = 1;
+                                        editor.putInt("lang", lang);
+                                        editor.commit();
+
                                         Intent refresh = new Intent("app.mobapp.android.pupkev.com.ling_o_ragon.MainActivity");
                                         startActivity(refresh);
                                         overridePendingTransition(R.anim.pushrightin, R.anim.pushrightout);

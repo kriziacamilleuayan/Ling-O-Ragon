@@ -47,9 +47,9 @@ public class TwoFiveActivity extends Activity {
         mp = MediaPlayer.create(this, R.raw.click);
         mp.start();
         AlertDialog.Builder a_builder = new AlertDialog.Builder(TwoFiveActivity.this);
-        a_builder.setTitle("Continue?")
+        a_builder.setTitle(R.string.cont)
                 .setCancelable(false)
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         mp.start();
@@ -57,7 +57,7 @@ public class TwoFiveActivity extends Activity {
                     }
 
                 })
-                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                .setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         mp.start();
@@ -84,9 +84,9 @@ public class TwoFiveActivity extends Activity {
                         mp.start();
                         AlertDialog.Builder alert = new AlertDialog.Builder(context);
                         //alert.setTitle(""); //Set Alert dialog title here
-                        alert.setMessage("The correct translation is 'Dakula'"); //Message here
+                        alert.setMessage(R.string.ttwofive); //Message here
                         alert.setCancelable(false);
-                        alert.setPositiveButton("next", new DialogInterface.OnClickListener() {
+                        alert.setPositiveButton(R.string.next, new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int whichButton) {
                                 Intent nextForm = new Intent(TwoFiveActivity.this, TwoSixActivity.class);
                                 startActivity(nextForm);
@@ -108,9 +108,9 @@ public class TwoFiveActivity extends Activity {
                         // txt_ans.setText(ans);
                         AlertDialog.Builder alert = new AlertDialog.Builder(context);
                         //alert.setTitle(""); //Set Alert dialog title here
-                        alert.setMessage("The correct translation is 'Dakula'"); //Message here
+                        alert.setMessage(R.string.ttwofive); //Message here
                         alert.setCancelable(false);
-                        alert.setPositiveButton("next", new DialogInterface.OnClickListener() {
+                        alert.setPositiveButton(R.string.next, new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int whichButton) {
                                 Intent nextForm = new Intent(TwoFiveActivity.this, TwoSixActivity.class);
                                 startActivity(nextForm);

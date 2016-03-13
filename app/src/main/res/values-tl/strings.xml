@@ -38,7 +38,8 @@
     <string name="wewe">Ang tamang pagsalin ay</string>
     <string name="congrats">Binabati kita!</string>
     <string name="congratscontent_one">Nakakuha ka ng 50 na bituin</string>
-    <string name="oops">Sayang! Hindi mo nasagutan ng tama ang lahat :(</string>
+    <string name="congratscontent_two">Nakakuha ka ng 70 na bituin</string>
+    <string name="oops">Sayang! Hindi mo nasagutan ng tama lahat</string>
     <string name="oopscontent">Ulitin natin?</string>
     <string name="cont">Ipagpatuloy?</string>
     <string name="selectLang">Pumili ng Linggwahe</string>
@@ -82,6 +83,19 @@
     <string name="tonefifteen">Ang tamang pagsalin ay <b>Dai.</b></string>
 
 
+    <!--alert dialog correct translation Stage 2-->
+    //level one stage two
+    <string name="ttwoone">Ang tamang pagsalin ay <b>Unum.</b></string>
+    <string name="ttwotwo">Ang tamang pagsalin ay <b>Duwa.</b></string>
+    <string name="ttwothree">Ang tamang pagsalin ay <b>Sampung malalaking isda.</b></string>
+    <string name="ttwofour">Ang tamang pagsalin ay <b>Mahaba.</b></string>
+    <string name="ttwofive">Ang tamang pagsalin ay <b>Dakula.</b></string>
+    <string name="ttwosix">Ang tamang pagsalin ay  <b>Tulo.</b></string>
+    <string name="ttwoseven">Ang tamang pagsalin ay <b>Maniwang.</b></string>
+    <string name="ttwoeight">Ang tamang pagsalin ay <b>Isang isda.</b></string>
+    <string name="ttwonine">Ang tamang pagsalin ay <b>Dalawang magkapatid.</b></string>
+    <string name="ttwoten">Ang tamang pagsalin ay <b>Malawak ang bukid ni lolo.</b></string>
+    <string name="ttwoeleven">Ang tamang pagsalin ay <b>Matangkad.</b></string>
 
     //level one stage two
     <string name="twoone"><b>Anim</b>.</string>
@@ -96,6 +110,35 @@
     <string name="twoten"><b>Mahiwas an bukid nin lolo</b>.</string>
     <string name="twoeleven"><b>Halangkaw</b>.</string>
 
+
+    //level one stage three
+    <string name="threeone">Marhay na <b>aga</b>.</string>
+    <string name="threetwo"><b>Banggi</b>.</string>
+    <string name="threethree">Maiba ako sa palengke pagkagising <b>sa-aga</b>.</string>
+    <string name="threefour">Magsikaon kamo sa hapag mamayang <b>hapon</b>.</string>
+    <string name="threefive">Nadangog mo ba su huni nin uwak <b>kasubanggi</b>.</string>
+    <string name="threesix">Saen ka mabakal nin gulay <b>atyan</b>.</string>
+    <string name="threeseven"><b>Madiklom </b>an bangging hararom.</string>
+    <string name="threeeight">Malaad an buwan tuwing <b>matanga</b>.</string>
+    <string name="threenine"><b>Mainit</b>.</string>
+
+
+    <!-- alert dialogs level one stage three-->
+    <string name="tthreeone">Ang tamang pagsalin ay <b>Magandang Umaga</b>.</string>
+    <string name="tthreetwo">Ang tamang pagsalin ay <b>Gabi</b>.</string>
+    <string name="tthreethree">Ang tamang pagsalin ay <b>Pupunta ako sa palengke pagkagising bukas</b>.</string>
+    <string name="tthreefour">Ang tamang pagsalin ay <b>>Kumain kayo sa mesa mamayang hapon</b>.</string>
+    <string name="tthreefive">Ang tamang pagsalin ay <b>Narinig mo ba ang tuko kagabi</b>.</string>
+    <string name="tthreesix">Ang tamang pagsalin ay <b>San ka bibili ng gluay mamaya</b>?</string>
+    <string name="tthreeseven">Ang tamang pagsalin ay <b>Madilim ang gabing malalim</b>.</string>
+    <string name="tthreeeight">Ang tamang pagsalin ay <b>Maliwanag ang buwan tuwing hatinggabi</b>.</string>
+    <string name="tthreenine">Ang tamang pagsalin ay <b>Mainiton</b>.</string>
+
+
+    //ThreeEight
+    <string name="btnUumaga">Umaga</string>
+    <string name="btnHatinggabi">Hatinggabi</string>
+    <string name="btnHaponpon">Hapon</string>
 
     //Oneone
     <string name="btnMaganda">Maganda</string>

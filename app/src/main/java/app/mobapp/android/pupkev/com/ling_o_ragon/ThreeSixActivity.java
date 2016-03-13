@@ -19,12 +19,12 @@ import android.widget.TextView;
 /**
  * Created by A C E R on 12/30/2015.
  */
-public class TwoTwoActivity extends Activity {
+public class ThreeSixActivity extends Activity {
 
     //private static ImageButton button_next;
-    private static Button button_duo;
-    private static Button button_duwa;
-    private static Button button_diit;
+    private static Button button_mamaya;
+    private static Button button_bukas;
+    private static Button button_kahapon;
     final Context context = this;
     private static ProgressBar pbar;
     private static MediaPlayer mp;
@@ -32,20 +32,20 @@ public class TwoTwoActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.two_two);
+        setContentView(R.layout.three_six);
         onButtonClickListener();
 
         pbar = (ProgressBar) findViewById(R.id.progressBar);
-        pbar.setMax(11);
-
-        pbar.setProgress(2);
+        pbar.setMax(9);
+        pbar.setProgress(5);
 
     }
 
     @Override
     public void onBackPressed() {
-        mp = MediaPlayer.create(this,R.raw.click);
-        AlertDialog.Builder a_builder = new AlertDialog.Builder(TwoTwoActivity.this);
+        mp = MediaPlayer.create(this, R.raw.click);
+        mp.start();
+        AlertDialog.Builder a_builder = new AlertDialog.Builder(ThreeSixActivity.this);
         a_builder.setTitle(R.string.cont)
                 .setCancelable(false)
                 .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
@@ -60,7 +60,7 @@ public class TwoTwoActivity extends Activity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         mp.start();
-                        Intent nextform = new Intent(TwoTwoActivity.this, LevelOneActivity.class);
+                        Intent nextform = new Intent(ThreeSixActivity.this, LevelOneActivity.class);
                         startActivity(nextform);
                         overridePendingTransition(R.anim.pushrightin, R.anim.pushrightout);
                         finish();
@@ -71,35 +71,34 @@ public class TwoTwoActivity extends Activity {
     }
 
     public void onButtonClickListener(){
-
         mp = MediaPlayer.create(this, R.raw.click);
-        button_duo = (Button) findViewById(R.id.btnDuo);
-        button_duwa = (Button) findViewById(R.id.btnDuwa);
-        button_diit = (Button) findViewById(R.id.btnDiit);
+        button_mamaya = (Button) findViewById(R.id.btnMamaya);
+        button_bukas = (Button) findViewById(R.id.btnBukas);
+        button_kahapon = (Button) findViewById(R.id.btnKahapon);
 
-        button_duo.setOnClickListener(
+        button_mamaya.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+
+
                         mp.start();
-                        AlertDialog.Builder alert = new AlertDialog.Builder(context);
-                        //alert.setTitle(""); //Set Alert dialog title here
-                        alert.setMessage(R.string.ttwotwo); //Message here
-                        alert.setCancelable(false);
-                        alert.setPositiveButton(R.string.next, new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int whichButton) {
-                                Intent nextForm = new Intent(TwoTwoActivity.this, TwoThreeActivity.class);
-                                startActivity(nextForm);
-                                overridePendingTransition(R.anim.leftin, R.anim.pushleftout);
-                                finish();
-                            } // End of onClick(DialogInterface dialog, int whichButton)
-                        }); //End of alert.setPositiveButton
-                        AlertDialog alertDialog = alert.create();
-                        alertDialog.show();
+                        SharedPreferences sharedP = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+                        SharedPreferences.Editor editor = sharedP.edit();
+                        Integer score = sharedP.getInt("ScoreThree",0);
+                        Integer totalScore = score + 1;
+                        editor.putInt("ScoreThree", totalScore);
+                        editor.commit();
+
+                        Intent nextForm = new Intent(ThreeSixActivity.this, ThreeSevenActivity.class);
+                        startActivity(nextForm);
+                        overridePendingTransition(R.anim.leftin, R.anim.pushleftout);
+                        finish();
+
                     }
                 }
         );
-        button_diit.setOnClickListener(
+        button_kahapon.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -108,11 +107,12 @@ public class TwoTwoActivity extends Activity {
                         // txt_ans.setText(ans);
                         AlertDialog.Builder alert = new AlertDialog.Builder(context);
                         //alert.setTitle(""); //Set Alert dialog title here
-                        alert.setMessage(R.string.ttwotwo); //Message here
+                        alert.setMessage(R.string.tthreesix); //Message here
                         alert.setCancelable(false);
                         alert.setPositiveButton(R.string.next, new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int whichButton) {
-                                Intent nextForm = new Intent(TwoTwoActivity.this, TwoThreeActivity.class);
+                                mp.start();
+                                Intent nextForm = new Intent(ThreeSixActivity.this, ThreeSevenActivity.class);
                                 startActivity(nextForm);
                                 overridePendingTransition(R.anim.leftin, R.anim.pushleftout);
                                 finish();
@@ -123,21 +123,28 @@ public class TwoTwoActivity extends Activity {
                     }
                 }
         );
-        button_duwa.setOnClickListener(
+        button_bukas.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+
                         mp.start();
-                        SharedPreferences sharedP = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
-                        SharedPreferences.Editor editor = sharedP.edit();
-                        Integer score = sharedP.getInt("ScoreTwo",0);
-                        Integer totalScore = score + 1;
-                        editor.putInt("ScoreTwo", totalScore);
-                        editor.commit();
-                        Intent nextForm = new Intent(TwoTwoActivity.this, TwoThreeActivity.class);
-                        startActivity(nextForm);
-                        overridePendingTransition(R.anim.leftin, R.anim.pushleftout);
-                        finish();
+                        AlertDialog.Builder alert = new AlertDialog.Builder(context);
+                        //alert.setTitle(""); //Set Alert dialog title here
+                        alert.setMessage(R.string.tthreesix); //Message here
+                        alert.setCancelable(false);
+                        alert.setPositiveButton(R.string.next, new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int whichButton) {
+                                mp.start();
+                                Intent nextForm = new Intent(ThreeSixActivity.this, ThreeSevenActivity.class);
+                                startActivity(nextForm);
+                                overridePendingTransition(R.anim.leftin, R.anim.pushleftout);
+                                finish();
+                            } // End of onClick(DialogInterface dialog, int whichButton)
+                        }); //End of alert.setPositiveButton
+                        AlertDialog alertDialog = alert.create();
+                        alertDialog.show();
+
                     }
                 }
         );

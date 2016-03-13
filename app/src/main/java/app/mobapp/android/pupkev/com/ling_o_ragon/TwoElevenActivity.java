@@ -47,16 +47,16 @@ public class TwoElevenActivity extends Activity {
         mp = MediaPlayer.create(this, R.raw.click);
         mp.start();
         AlertDialog.Builder a_builder = new AlertDialog.Builder(TwoElevenActivity.this);
-        a_builder.setTitle("Continue?")
+        a_builder.setTitle(R.string.cont)
                 .setCancelable(false)
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.cancel();
                     }
 
                 })
-                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                .setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         Intent nextform = new Intent(TwoElevenActivity.this, LevelOneActivity.class);
@@ -93,9 +93,9 @@ public class TwoElevenActivity extends Activity {
                         }
                         else{
                             AlertDialog.Builder alert = new AlertDialog.Builder(context);
-                            alert.setMessage("The correct translation is 'Matangkad.'"); //Message here
+                            alert.setMessage(R.string.ttwoeleven); //Message here
                             alert.setCancelable(false);
-                            alert.setPositiveButton("next", new DialogInterface.OnClickListener() {
+                            alert.setPositiveButton(R.string.next, new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int whichButton) {
                                     mp.start();
                                     Intent nextForm = new Intent(TwoElevenActivity.this, TwoEightActivity.class);

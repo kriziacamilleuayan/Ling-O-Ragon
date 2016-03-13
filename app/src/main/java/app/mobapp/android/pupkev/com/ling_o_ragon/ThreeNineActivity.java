@@ -9,7 +9,6 @@ import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -20,7 +19,7 @@ import android.widget.TextView;
 /**
  * Created by A C E R on 1/4/2016.
  */
-public class TwoTenActivity extends Activity {
+public class ThreeNineActivity extends Activity {
 
 
     private static Button button_next;
@@ -32,22 +31,21 @@ public class TwoTenActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.two_ten);
+        setContentView(R.layout.three_nine);
         onButtonClickListener();
 
         pbar = (ProgressBar) findViewById(R.id.progressBar);
-        pbar.setMax(11);
-
-        pbar.setProgress(9);
+        pbar.setMax(9);
+        pbar.setProgress(8);
 
     }
 
 
     @Override
     public void onBackPressed() {
-        mp = MediaPlayer.create(this,R.raw.click);
+        mp = MediaPlayer.create(this, R.raw.click);
         mp.start();
-        AlertDialog.Builder a_builder = new AlertDialog.Builder(TwoTenActivity.this);
+        AlertDialog.Builder a_builder = new AlertDialog.Builder(ThreeNineActivity.this);
         a_builder.setTitle(R.string.cont)
                 .setCancelable(false)
                 .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
@@ -62,7 +60,7 @@ public class TwoTenActivity extends Activity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         mp.start();
-                        Intent nextform = new Intent(TwoTenActivity.this, LevelOneActivity.class);
+                        Intent nextform = new Intent(ThreeNineActivity.this, LevelOneActivity.class);
                         startActivity(nextform);
                         overridePendingTransition(R.anim.pushrightin, R.anim.pushrightout);
                         finish();
@@ -73,7 +71,7 @@ public class TwoTenActivity extends Activity {
     }
 
     public void onButtonClickListener(){
-        mp = MediaPlayer.create(this,R.raw.click);
+        mp = MediaPlayer.create(this, R.raw.click);
         txt_ans = (EditText) findViewById(R.id.edittxtAns);
         button_next = (Button) findViewById(R.id.btnNext);
         button_next.setOnClickListener(
@@ -81,28 +79,28 @@ public class TwoTenActivity extends Activity {
                     @Override
                     public void onClick(View v) {
                         mp.start();
-                        if (txt_ans.getText().toString().toLowerCase().equals("malawak ang bukid ni lolo")){
+                        if (txt_ans.getText().toString().toLowerCase().equals("mainiton")){
                             SharedPreferences sharedP = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
                             SharedPreferences.Editor editor = sharedP.edit();
-                            Integer score = sharedP.getInt("ScoreTwo",0);
+                            Integer score = sharedP.getInt("ScoreThree",0);
                             Integer totalScore = score + 1;
-                            editor.putInt("ScoreTwo", totalScore);
+                            editor.putInt("ScoreThree", totalScore);
                             editor.commit();
 
-                            Intent nextForm = new Intent(TwoTenActivity.this, TwoElevenActivity.class);
+                            Intent nextForm = new Intent(ThreeNineActivity.this, ThreeFiveActivity.class);
                             startActivity(nextForm);
                             overridePendingTransition(R.anim.leftin, R.anim.pushleftout);
                             finish();
-
                         }
                         else{
+
                             AlertDialog.Builder alert = new AlertDialog.Builder(context);
-                            alert.setMessage(R.string.ttwoten); //Message here
+                            alert.setMessage(R.string.tthreenine); //Message here
                             alert.setCancelable(false);
                             alert.setPositiveButton(R.string.next, new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int whichButton) {
                                     mp.start();
-                                    Intent nextForm = new Intent(TwoTenActivity.this, TwoElevenActivity.class);
+                                    Intent nextForm = new Intent(ThreeNineActivity.this, ThreeFiveActivity.class);
                                     startActivity(nextForm);
                                     overridePendingTransition(R.anim.leftin, R.anim.pushleftout);
                                     finish();

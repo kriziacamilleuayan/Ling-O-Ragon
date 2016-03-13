@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="app.mobapp.android.pupkev.com.ling_o_ragon.ThreeOneActivity"
+    tools:context="app.mobapp.android.pupkev.com.ling_o_ragon.ThreeNineActivity"
     android:background="@drawable/bgred">
 
 
@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/textView3"
-        android:text="@string/threeone"
+        android:text="@string/threenine"
         android:textColor="#ffffff"
         android:typeface="normal"
         android:textSize="15sp"

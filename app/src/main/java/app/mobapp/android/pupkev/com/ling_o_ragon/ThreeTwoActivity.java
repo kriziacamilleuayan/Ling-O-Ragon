@@ -35,7 +35,7 @@ public class ThreeTwoActivity extends Activity {
         onButtonClickListener();
 
         pbar = (ProgressBar) findViewById(R.id.progressBar);
-        pbar.setMax(5);
+        pbar.setMax(9);
         pbar.setProgress(2);
 
     }
@@ -46,9 +46,9 @@ public class ThreeTwoActivity extends Activity {
         mp = MediaPlayer.create(this, R.raw.click);
         mp.start();
         AlertDialog.Builder a_builder = new AlertDialog.Builder(ThreeTwoActivity.this);
-        a_builder.setTitle("Continue?")
+        a_builder.setTitle(R.string.cont)
                 .setCancelable(false)
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         mp.start();
@@ -56,7 +56,7 @@ public class ThreeTwoActivity extends Activity {
                     }
 
                 })
-                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                .setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         mp.start();
@@ -95,9 +95,9 @@ public class ThreeTwoActivity extends Activity {
                         else{
 
                             AlertDialog.Builder alert = new AlertDialog.Builder(context);
-                            alert.setMessage("The correct translation is 'Magandang Umaga'"); //Message here
+                            alert.setMessage(R.string.tthreetwo); //Message here
                             alert.setCancelable(false);
-                            alert.setPositiveButton("next", new DialogInterface.OnClickListener() {
+                            alert.setPositiveButton(R.string.next, new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int whichButton) {
                                     mp.start();
                                     Intent nextForm = new Intent(ThreeTwoActivity.this, ThreeThreeActivity.class);

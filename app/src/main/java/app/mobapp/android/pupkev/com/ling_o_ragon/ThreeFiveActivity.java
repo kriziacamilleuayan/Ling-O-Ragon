@@ -38,8 +38,8 @@ public class ThreeFiveActivity extends Activity {
         onButtonClickListener();
 
         pbar = (ProgressBar) findViewById(R.id.progressBar);
-        pbar.setMax(5);
-        pbar.setProgress(5);
+        pbar.setMax(9);
+        pbar.setProgress(9);
 
     }
 
@@ -48,16 +48,16 @@ public class ThreeFiveActivity extends Activity {
         mp = MediaPlayer.create(this, R.raw.click);
         mp.start();
         AlertDialog.Builder a_builder = new AlertDialog.Builder(ThreeFiveActivity.this);
-        a_builder.setTitle("Continue?")
+        a_builder.setTitle(R.string.cont)
                 .setCancelable(false)
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.cancel();
                     }
 
                 })
-                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                .setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         Intent nextform = new Intent(ThreeFiveActivity.this, LevelOneActivity.class);
@@ -83,9 +83,9 @@ public class ThreeFiveActivity extends Activity {
                         mp.start();
                         AlertDialog.Builder alert = new AlertDialog.Builder(context);
                         //alert.setTitle(""); //Set Alert dialog title here
-                        alert.setMessage("The correct translation is 'Narinig mo ba ang tuko kagabi.'"); //Message here
+                        alert.setMessage(R.string.tthreefive); //Message here
                         alert.setCancelable(false);
-                        alert.setPositiveButton("next", new DialogInterface.OnClickListener() {
+                        alert.setPositiveButton(R.string.next, new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int whichButton) {
                                 mp.start();
                                 SharedPreferences sharedP = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
@@ -94,10 +94,10 @@ public class ThreeFiveActivity extends Activity {
 
 
                                 AlertDialog.Builder alert = new AlertDialog.Builder(context);
-                                alert.setTitle("Oooppss. You didn't answer all correctly");
-                                alert.setMessage("Restart Game?");
+                                alert.setTitle(R.string.oops);
+                                alert.setMessage(R.string.oopscontent);
                                 alert.setCancelable(false);
-                                alert.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                                alert.setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int whichButton) {
                                         mp.start();
                                         Intent nextForm = new Intent(ThreeFiveActivity.this, ThreeOneActivity.class);
@@ -106,7 +106,7 @@ public class ThreeFiveActivity extends Activity {
                                         finish();
                                     } // End of onClick(DialogInterface dialog, int whichButton)
                                 }); //End of alert.setPositiveButton
-                                alert.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                                alert.setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int whichButton) {
                                         mp.start();
                                         Intent nextForm = new Intent(ThreeFiveActivity.this, MainActivity.class);
@@ -133,9 +133,9 @@ public class ThreeFiveActivity extends Activity {
                         // txt_ans.setText(ans);
                         AlertDialog.Builder alert = new AlertDialog.Builder(context);
                         //alert.setTitle(""); //Set Alert dialog title here
-                        alert.setMessage("The correct translation is 'Narinig mo ba ang tuko kagabi.'"); //Message here
+                        alert.setMessage(R.string.tthreefive); //Message here
                         alert.setCancelable(false);
-                        alert.setPositiveButton("next", new DialogInterface.OnClickListener() {
+                        alert.setPositiveButton(R.string.next, new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int whichButton) {
 
                                 mp.start();
@@ -144,10 +144,10 @@ public class ThreeFiveActivity extends Activity {
                                 Toast.makeText(ThreeFiveActivity.this, "You're Score is:" + totalScore, Toast.LENGTH_LONG).show();
 
                                 AlertDialog.Builder alert = new AlertDialog.Builder(context);
-                                alert.setTitle("Oooppss. You didn't answer all correctly");
-                                alert.setMessage("Restart Game?");
+                                alert.setTitle(R.string.oops);
+                                alert.setMessage(R.string.oopscontent);
                                 alert.setCancelable(false);
-                                alert.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                                alert.setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int whichButton) {
                                         mp.start();
                                         Intent nextForm = new Intent(ThreeFiveActivity.this, ThreeOneActivity.class);
@@ -156,7 +156,7 @@ public class ThreeFiveActivity extends Activity {
                                         finish();
                                     } // End of onClick(DialogInterface dialog, int whichButton)
                                 }); //End of alert.setPositiveButton
-                                alert.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                                alert.setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int whichButton) {
                                         mp.start();
                                         Intent nextForm = new Intent(ThreeFiveActivity.this, MainActivity.class);
@@ -186,7 +186,7 @@ public class ThreeFiveActivity extends Activity {
                         editor.putInt("ScoreThree", totalScore);
                         editor.commit();
 
-                        if (totalScore == 5){
+                        if (totalScore == 9){
 
                             Toast.makeText(ThreeFiveActivity.this, "You're Score is:" + totalScore, Toast.LENGTH_LONG).show();
 
@@ -204,10 +204,10 @@ public class ThreeFiveActivity extends Activity {
                                 editors.commit();
 
                                 AlertDialog.Builder alert = new AlertDialog.Builder(context);
-                                alert.setTitle("Congratulations!");
-                                alert.setMessage("You have earned 75 stars");
+                                alert.setTitle(R.string.congrats);
+                                alert.setMessage(R.string.congratscontent_two);
                                 alert.setCancelable(false);
-                                alert.setPositiveButton("next", new DialogInterface.OnClickListener() {
+                                alert.setPositiveButton(R.string.next, new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int whichButton) {
                                         mp.start();
                                         Intent nextForm = new Intent(ThreeFiveActivity.this, MainActivity.class);
@@ -224,9 +224,9 @@ public class ThreeFiveActivity extends Activity {
                             else{
 
                                 AlertDialog.Builder alert = new AlertDialog.Builder(context);
-                                alert.setTitle("Congratulations!");
+                                alert.setTitle(R.string.congrats);
                                 alert.setCancelable(false);
-                                alert.setPositiveButton("next", new DialogInterface.OnClickListener() {
+                                alert.setPositiveButton(R.string.next, new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int whichButton) {
                                         mp.start();
                                         Intent nextForm = new Intent(ThreeFiveActivity.this, MainActivity.class);
@@ -248,10 +248,10 @@ public class ThreeFiveActivity extends Activity {
                             Toast.makeText(ThreeFiveActivity.this, "You're Score is:" + totalScores, Toast.LENGTH_LONG).show();
 
                             AlertDialog.Builder alert = new AlertDialog.Builder(context);
-                            alert.setTitle("Oooppss. You didn't answer all correctly");
-                            alert.setMessage("Restart Game?");
+                            alert.setTitle(R.string.oops);
+                            alert.setMessage(R.string.oopscontent);
                             alert.setCancelable(false);
-                            alert.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                            alert.setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int whichButton) {
                                     mp.start();
                                     Intent nextForm = new Intent(ThreeFiveActivity.this, ThreeOneActivity.class);
@@ -260,7 +260,7 @@ public class ThreeFiveActivity extends Activity {
                                     finish();
                                 } // End of onClick(DialogInterface dialog, int whichButton)
                             }); //End of alert.setPositiveButton
-                            alert.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                            alert.setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int whichButton) {
                                     mp.start();
                                     Intent nextForm = new Intent(ThreeFiveActivity.this, MainActivity.class);

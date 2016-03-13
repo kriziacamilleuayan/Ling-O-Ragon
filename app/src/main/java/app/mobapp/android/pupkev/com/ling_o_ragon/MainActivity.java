@@ -110,6 +110,8 @@ public class MainActivity extends Activity{
 
         }
 
+
+
     }
 
     public void updateStars() {
@@ -118,6 +120,19 @@ public class MainActivity extends Activity{
             //the key is "Stars" don't forget to type it as you created the Sp
         String stars = String.valueOf(sharedPreferences.getInt("Stars", 0));
         txt_stars.setText(stars);
+
+        Integer lang = sharedPreferences.getInt("lang", 0);
+
+        if (lang == 0){
+            setLocale("tl");
+        }
+
+        else{
+            setLocale("en");
+
+        }
+
+
     }
 
     @Override

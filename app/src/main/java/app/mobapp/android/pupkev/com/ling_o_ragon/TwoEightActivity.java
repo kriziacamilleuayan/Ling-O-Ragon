@@ -46,9 +46,9 @@ public class TwoEightActivity extends Activity {
         mp = MediaPlayer.create(this, R.raw.click);
         mp.start();
         AlertDialog.Builder a_builder = new AlertDialog.Builder(TwoEightActivity.this);
-        a_builder.setTitle("Continue?")
+        a_builder.setTitle(R.string.cont)
                 .setCancelable(false)
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         mp.start();
@@ -56,7 +56,7 @@ public class TwoEightActivity extends Activity {
                     }
 
                 })
-                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                .setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         mp.start();
@@ -106,10 +106,10 @@ public class TwoEightActivity extends Activity {
                                     editors.commit();
 
                                     AlertDialog.Builder alert = new AlertDialog.Builder(context);
-                                    alert.setTitle("Congratulations!");
-                                    alert.setMessage("You have earned 75 stars");
+                                    alert.setTitle(R.string.congrats);
+                                    alert.setMessage(R.string.congratscontent_two);
                                     alert.setCancelable(false);
-                                    alert.setPositiveButton("next", new DialogInterface.OnClickListener() {
+                                    alert.setPositiveButton(R.string.next, new DialogInterface.OnClickListener() {
                                         public void onClick(DialogInterface dialog, int whichButton) {
                                             mp.start();
                                             Intent nextForm = new Intent(TwoEightActivity.this, MainActivity.class);
@@ -126,9 +126,9 @@ public class TwoEightActivity extends Activity {
                                 else{
 
                                     AlertDialog.Builder alert = new AlertDialog.Builder(context);
-                                    alert.setTitle("Congratulations!");
+                                    alert.setTitle(R.string.congrats);
                                     alert.setCancelable(false);
-                                    alert.setPositiveButton("next", new DialogInterface.OnClickListener() {
+                                    alert.setPositiveButton(R.string.next, new DialogInterface.OnClickListener() {
                                         public void onClick(DialogInterface dialog, int whichButton) {
                                             mp.start();
                                             Intent nextForm = new Intent(TwoEightActivity.this, MainActivity.class);
@@ -145,10 +145,10 @@ public class TwoEightActivity extends Activity {
                             else{
                                 Toast.makeText(TwoEightActivity.this, "Your Score is: " + totalScore, Toast.LENGTH_LONG).show();
                                 AlertDialog.Builder alert = new AlertDialog.Builder(context);
-                                alert.setTitle("Oooppss. You didn't answer all correctly");
-                                alert.setMessage("Restart Game?");
+                                alert.setTitle(R.string.oops);
+                                alert.setMessage(R.string.oopscontent);
                                 alert.setCancelable(false);
-                                alert.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                                alert.setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int whichButton) {
                                         mp.start();
                                         Intent nextForm = new Intent(TwoEightActivity.this, TwoOneActivity.class);
@@ -157,7 +157,7 @@ public class TwoEightActivity extends Activity {
                                         finish();
                                     } // End of onClick(DialogInterface dialog, int whichButton)
                                 }); //End of alert.setPositiveButton
-                                alert.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                                alert.setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int whichButton) {
                                         mp.start();
                                         Intent nextForm = new Intent(TwoEightActivity.this, MainActivity.class);
@@ -173,22 +173,22 @@ public class TwoEightActivity extends Activity {
                         }
                         else{
                             AlertDialog.Builder alert = new AlertDialog.Builder(context);
-                            alert.setMessage("The correct translation is 'Isang isda.'"); //Message here
+                            alert.setMessage(R.string.ttwoeight); //Message here
                             alert.setCancelable(false);
-                            alert.setPositiveButton("next", new DialogInterface.OnClickListener() {
+                            alert.setPositiveButton(R.string.next, new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int whichButton) {
                                     mp.start();
 
                                     SharedPreferences sharedP = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
-                                    Integer totalScore = sharedP.getInt("ScoreTwo",0);
+                                    Integer totalScore = sharedP.getInt("ScoreTwo", 0);
                                     Toast.makeText(TwoEightActivity.this, "You're Score is:" + totalScore, Toast.LENGTH_LONG).show();
 
 
                                     AlertDialog.Builder alert = new AlertDialog.Builder(context);
-                                    alert.setTitle("Oooppss. You didn't answer all correctly");
-                                    alert.setMessage("Restart Game?");
+                                    alert.setTitle(R.string.oops);
+                                    alert.setMessage(R.string.oopscontent);
                                     alert.setCancelable(false);
-                                    alert.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                                    alert.setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
                                         public void onClick(DialogInterface dialog, int whichButton) {
                                             mp.start();
                                             Intent nextForm = new Intent(TwoEightActivity.this, TwoOneActivity.class);
@@ -197,7 +197,7 @@ public class TwoEightActivity extends Activity {
                                             finish();
                                         } // End of onClick(DialogInterface dialog, int whichButton)
                                     }); //End of alert.setPositiveButton
-                                    alert.setNegativeButton("No", new DialogInterface.OnClickListener() {
+                                    alert.setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
                                         public void onClick(DialogInterface dialog, int whichButton) {
                                             mp.start();
                                             Intent nextForm = new Intent(TwoEightActivity.this, MainActivity.class);

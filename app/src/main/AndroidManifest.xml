@@ -388,6 +388,42 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".ThreeSixActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.ThreeSixActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ThreeSevenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.ThreeSevenActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ThreeEightActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.ThreeEightActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ThreeNineActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="app.mobapp.android.pupkev.com.ling_o_ragon.ThreeNineActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
         <activity android:name=".TutorialOneActivity"
             android:screenOrientation="portrait">
             <intent-filter>

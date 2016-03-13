@@ -46,9 +46,9 @@ public class TwoThreeActivity extends Activity {
     public void onBackPressed() {
         mp = MediaPlayer.create(this, R.raw.click);
         AlertDialog.Builder a_builder = new AlertDialog.Builder(TwoThreeActivity.this);
-        a_builder.setTitle("Continue?")
+        a_builder.setTitle(R.string.cont)
                 .setCancelable(false)
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         mp.start();
@@ -56,7 +56,7 @@ public class TwoThreeActivity extends Activity {
                     }
 
                 })
-                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                .setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         mp.start();
@@ -93,9 +93,9 @@ public class TwoThreeActivity extends Activity {
                         }
                         else{
                             AlertDialog.Builder alert = new AlertDialog.Builder(context);
-                            alert.setMessage("The correct translation is 'sampung malalaking isda'"); //Message here
+                            alert.setMessage(R.string.ttwothree); //Message here
                             alert.setCancelable(false);
-                            alert.setPositiveButton("next", new DialogInterface.OnClickListener() {
+                            alert.setPositiveButton(R.string.next, new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int whichButton) {
                                     mp.start();
                                     Intent nextForm = new Intent(TwoThreeActivity.this, TwoFourActivity.class);

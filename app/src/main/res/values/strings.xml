@@ -25,11 +25,30 @@
     <string name="action_search">Search</string>
     <string name="action_logout">Logout</string>
     <string name="action_devinfo">Developer</string>
-    <string name="share_app">Share App</string>
+    <string name="share_app" translatable="false">Share App</string>
     <string name="language_setting">Change Language</string>
     <string name="action_change_pass">Change Password</string>
     <string name="lang_select">Language Select</string>
     <string name="tutorial">Tutorial</string>
+
+    //Alert dialogs
+    <string name="exitLing">Exit Ling-O-Ragon</string>
+    <string name="exitcontent">Are you sure you want to exit?</string>
+    <string name="greetingsStage">Greetings Stage!</string>
+    <string name="numbersStage">Numbers and Sizes Stage!</string>
+    <string name="dateStage">Date and Time Stage!</string>
+    <string name="gcontent">Are you ready?</string>
+    <string name="wewe">The correct translation is</string>
+    <string name="congrats">Congratulations!</string>
+    <string name="congratscontent_one">You have earned 50 stars</string>
+    <string name="congratscontent_two">You have earned 75 stars</string>
+    <string name="oops">Oooppss. You did not answer all correctly</string>
+    <string name="oopscontent">Restart Game?</string>
+    <string name="cont">Continue?</string>
+    <string name="selectLang">Select Language</string>
+    <string name="selectedEng">You have selected English</string>
+    <string name="selectedFil">Ang pinili mo ay Filipino</string>
+
 
     //questions
     //level one stage one
@@ -67,6 +86,19 @@
     <string name="tonefifteen">The correct translation is <b>Dai.</b></string>
 
 
+    <!--alert dialog correct translation Stage 2-->
+    //level one stage two
+    <string name="ttwoone">The correct translation is <b>Unum.</b></string>
+    <string name="ttwotwo">The correct translation is <b>Duwa.</b></string>
+    <string name="ttwothree">The correct translation is <b>Sampung malalaking isda.</b></string>
+    <string name="ttwofour">The correct translation is <b>Mahaba.</b></string>
+    <string name="ttwofive">The correct translation is <b>Dakula.</b></string>
+    <string name="ttwosix">The correct translation is <b>Tulo.</b></string>
+    <string name="ttwoseven">The correct translation is <b>Maniwang.</b></string>
+    <string name="ttwoeight">The correct translation is <b>Isang isda.</b></string>
+    <string name="ttwonine">The correct translation is <b>Dalawang magkapatid.</b></string>
+    <string name="ttwoten">The correct translation is <b>Malawak ang bukid ni lolo.</b></string>
+    <string name="ttwoeleven">The correct translation is <b>Matangkad.</b></string>
 
     //level one stage two
     <string name="twoone"><b>Anim</b>.</string>
@@ -81,28 +113,44 @@
     <string name="twoten"><b>Mahiwas an bukid nin lolo</b>.</string>
     <string name="twoeleven"><b>Halangkaw</b>.</string>
 
+
+    //level one stage three
+    <string name="threeone">Marhay na <b>aga</b>.</string>
+    <string name="threetwo"><b>Banggi</b>.</string>
+    <string name="threethree">Maiba ako sa palengke pagkagising <b>sa-aga</b>.</string>
+    <string name="threefour">Magsikaon kamo sa hapag mamayang <b>hapon</b>.</string>
+    <string name="threefive">Nadangog mo ba su huni nin uwak <b>kasubanggi</b>.</string>
+    <string name="threesix">Saen ka mabakal nin gulay <b>atyan</b>.</string>
+    <string name="threeseven"><b>Madiklom </b>an bangging hararom.</string>
+    <string name="threeeight">Malaad an buwan tuwing <b>matanga</b>.</string>
+    <string name="threenine"><b>Mainit</b>.</string>
+
+
+
+
+    <!-- alert dialogs level one stage three-->
+    <string name="tthreeone">The correct translation is <b>Magandang Umaga</b>.</string>
+    <string name="tthreetwo">The correct translation is <b>Gabi</b>.</string>
+    <string name="tthreethree">The correct translation is <b>Pupunta ako sa palengke pagkagising bukas</b>.</string>
+    <string name="tthreefour">The correct translation is <b>Kumain kayo sa mesa mamayang hapon</b>.</string>
+    <string name="tthreefive">The correct translation is <b>Narinig mo ba ang tuko kagabi</b>.</string>
+    <string name="tthreesix">The correct translation is <b>San ka bibili ng gluay mamaya</b>?</string>
+    <string name="tthreeseven">The correct translation is <b>Madilim ang gabing malalim</b>.</string>
+    <string name="tthreeeight">The correct translation is <b>Maliwanag ang buwan tuwing hatinggabi</b>.</string>
+    <string name="tthreenine">The correct translation is <b>Mainiton</b>.</string>
+
+
     //buttons
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="next">next</string>
     <string name="buy">Buy</string>
+    
+    //ThreeEight
+    <string name="btnUumaga">Umaga</string>
+    <string name="btnHatinggabi">Hatinggabi</string>
+    <string name="btnHaponpon">Hapon</string>
 
-    //Alert dialogs
-    <string name="exitLing">Exit Ling-O-Ragon</string>
-    <string name="exitcontent">Are you sure you want to exit?</string>
-    <string name="greetingsStage">Greetings Stage!</string>
-    <string name="numbersStage">Numbers and Sizes Stage!</string>
-    <string name="dateStage">Date and Time Stage!</string>
-    <string name="gcontent">Are you ready?</string>
-    <string name="wewe">The correct translation is</string>
-    <string name="congrats">Congratulations!</string>
-    <string name="congratscontent_one">You have earned 50 stars</string>
-    <string name="oops">Oooppss. You did not answer all correctly</string>
-    <string name="oopscontent">Restart Game?</string>
-    <string name="cont">Continue?</string>
-    <string name="selectLang">Select Language</string>
-    <string name="selectedEng">You have selected English</string>
-    <string name="selectedFil">Ang pinili mo ay Filipino</string>
 
 
     //Oneone
